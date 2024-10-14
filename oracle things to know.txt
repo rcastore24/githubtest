@@ -1,0 +1,35 @@
+--join syntax (use join clause versus using where clause to perform join)
+--know different types of joins =>inner, outer, right, full
+--materialized view=>pros/cons
+--correlated subqueries=>the subquery is aka inline view
+--Common Table Expression (CTE) aka subquery factoring aka "sql with clause"
+	--possible question=>Why use subquery factoring (CTE or with clause)? to improve the design of a sql query
+	--can be used with any select,insert,update,delete
+	--part of sql-99 standard
+	--could be referring to same subquery more than once
+	--improves readability
+	--use it as a view without creating new object or don't have permission to create new object
+	--allows use of recursive queries or hierarchical queries
+	--oracle has a special set of hierarchical keywords that provide an alternative to recursive CTEs. Look up CONNECT BY PRIOR
+	--you can declare multiple CTE in a single statement separating them with a comma
+--interval datatypes
+	--interval is a new data type introduced in release 9i
+	--the column has a year precision (default is 2) when adding to a table=>2 means the year can go as high as 99, 3 means high as 999 and so on
+	--there is some additional setting (besides precision) when creating interval column, should look into these later
+	-- interval day to second is express in hours, days, minutes, seconds, and thousandsth of a second (5 different attributes)
+		--notation is like dd hh:min:sec:frac
+		--
+	--interval date to second column defaults to precision 2 for day and 6 for fractions of a second
+	--need to use function ts_dsinterval for oracle to recognize data as interval date to second values (kinda like to_date to convert text to date)
+
+--recursive queries or hierarchical queries=>a recursive query joins a query to itself
+-- CONNECT BY PRIOR
+
+to do 
+go through sql certification test exams
+
+
+
+possible things to look into (i.e., I saw a reference to them somewhere online)
+--derived table (part of looking into CTE's)
+--RAC (real application clusters)=>not sure I need to know about this
