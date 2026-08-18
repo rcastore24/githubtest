@@ -1,0 +1,1185 @@
+SQL and PL/SQL:
+
+What is the difference between TRUNCATE and DELETE?
+
+Explain the concept of JOIN types (INNER, LEFT, RIGHT, FULL OUTER).
+
+
+How do you write a query to find the Nth highest salary?  i got this wrong, revisit => use dense_rank analytic function
+
+
+What are stored procedures, functions, and triggers? Explain their differences and use cases.
+
+
+What are cursors and how are they used in PL/SQL?
+
+
+Explain the difference between UNION and UNION ALL.
+
+What is normalization and why is it important in database design? 
+
+How do you handle exceptions in PL/SQL?
+
+Oracle Database Concepts:
+What is a primary key, foreign key, and unique constraint?
+
+
+Explain the concept of views and indexes.
+
+What are tablespaces and data files?
+
+
+Describe the different components of an Oracle database architecture (SGA, PGA, background processes).
+
+What is the purpose of the COMMIT and ROLLBACK statements?
+
+
+How do you ensure data integrity in Oracle?
+
+Explain materialized views and their benefits.
+
+
+Advanced Topics (for experienced roles):
+
+What is Oracle Real Application Clusters (RAC) and its advantages?
+
+Explain Oracle Data Guard for disaster recovery.
+
+How do you tune SQL queries for performance optimization?
+What is Oracle Exadata and how does it enhance performance?
+Describe Oracle Multitenant architecture.
+How do you implement advanced security features in Oracle?
+What is Oracle Automatic Storage Management (ASM)? 
+
+General Questions:
+Tell me about yourself and your experience with Oracle.
+Why are you interested in this role/company?
+How do you stay updated with the latest Oracle technologies?
+Describe a challenging technical problem you faced and how you solved it.
+What are your strengths and weaknesses? 
+
+SELECT * FROM nls_database_parameters WHERE parameter = 'MAX_STRING_SIZE'
+
+--AI PROVIDED QUESTIONS BELOW
+
+
+2. Oracle Database Concepts:
+These questions focus on fundamental Oracle database knowledge. Examples include: 
+"Explain the relationship between a database, tablespace, and data file."
+
+
+"What are schema objects?"
+"Differentiate between VARCHAR and VARCHAR2."
+"What is an Oracle table and how is data stored?"
+"Explain integrity constraints and their types."
+3. SQL and PL/SQL:
+These questions test proficiency in querying and procedural language. Examples include:
+
+"Write a query to find the second highest salary in a table." --know this backwards and forwards
+
+"Explain the difference between TRANSLATE and REPLACE functions."
+"What is PL/SQL and its basic structure?"
+"Describe different types of cursors and their attributes."
+"How are comments represented in Oracle SQL/PL/SQL?"
+4. Oracle DBA Specific Questions (if applicable):
+For DBA roles, questions will delve into database administration tasks. Examples include:
+"What are the main responsibilities of an Oracle DBA?"
+"Explain backup and recovery strategies in Oracle."
+"How do you troubleshoot a slow-running query?"
+"Describe the components of the physical and logical database structure."
+
+5. Technical and Behavioral Questions:
+These often involve problem-solving scenarios and past experiences. Examples include: 
+"Tell me about a time you worked on a complex project."
+"How do you prioritize your work?"
+"Explain your approach to identifying and resolving performance issues."
+"Discuss your most recent invention or significant learning experience."
+6. Coding Challenges (for development roles):
+For software development positions, coding problems related to data structures, algorithms, and problem-solving are common. Examples might involve:
+Implementing algorithms like Kadane's Algorithm or Binary Search.
+Solving problems related to linked lists or trees.
+
+
+--below found at https://www.simplilearn.com/oracle-interview-questions-and-answers-article
+Basic Oracle Interview Questions
+
+1. What are schema objects?
+Schema objects are tables, indexes, databases, views, sequences, synonyms, triggers, functions, procedures, and packages.
+
+2. What are the components of physical database structure in the Oracle database?
+The components of the physical database structure are: 
+
+Greater than equal to two redo log files.
+Greater than equal to one control file.
+Greater than equal to one data file.
+
+3. What are the components of logical database structure in Oracle database?
+The two main components of logical database structure in the Oracle database are: 
+
+The logical units of database space allocation are data blocks, extents, segments, and tablespaces.
+
+A tablespace is the logical storage unit of an Oracle database. It is a set of related logical structures. The default tablespaces are: 
+
+SYSTEM and SYSAUX tablespaces 
+USERS tablespace
+UNDOTBS1 tablespace
+TEMP tablespace 
+
+4. Differentiate between Varchar and varchar2.
+	--Varchar and Varchar2 are data types in Oracle to store character strings of varying lengths. 
+	--While Varchar can store characters up to 2000 bytes, Varchar2 can store up to 4000 bytes. 
+	--Varchar will hold space for all characters defined during declaration. Varchar2 will free up the space for characters that were unused.
+
+5. What is an Oracle table?
+	--A table is the basic unit of data storage in the Oracle database. Data is stored in rows and columns. 
+
+6. What is a nested table?
+Nested table is a data type in Oracle used to hold columns for storing multi-valued attributes. A nested table can hold an entire sub table. 
+
+7. How are comments represented in Oracle?
+	--We can represent comments in Oracle in the following two ways:
+		--Two dashes (–) before the line starts – Single statement
+		--For block of statement, we can use /*—— */ to represent it as comments 
+
+8. What is the relationship between database, tablespace and data file?
+	--An Oracle database can contain one or more tablespaces or logical storage units. 
+	--These tablespaces collectively store all the data in a database. 
+	--Each tablespace consists of one or more files called data files. 
+	--The data files are physical structures conforming to the operating system in which Oracle is running.
+
+9. What are database objects in Oracle?
+	--Tables – set of elements arranged in vertical and horizontal manner
+	--Tablespaces – logical storage unit
+	--Views – Virtual table derived from one or more tables.
+	--Indexes – performance tuning method for record processing.
+	--Synonyms – name for tables
+
+10. Explain the ANALYZE command in Oracle.
+
+	--differences between analyze command and using DBMS_STATS.GATHER_TABLE_STATS?
+11. What types of Joins are used in SUBQUERIES?
+A join is used to compare and combine specific rows of data from two or more tables in a database. The various joins are:
+
+Self Join – to join table with itself
+
+Outer Join – to join matching data and some dissimilar data from more than one table
+
+Equi-join – with a join condition that returns only rows with equivalent values
+
+12. What is DML?
+We use Data Manipulation Language or DML to access and handle data in the existing objects. The DML statements are select, insert, update, and delete.
+
+RAW datatype in Oracle
+
+The RAW datatype stores variable-length binary data or byte string values. The maximum size for a raw in a table is 32767 bytes.
+
+13. What are Aggregate functions in Oracle?
+In an aggregate function, multiple rows or records are combined, and operations performed on a set of values to get a single value as output. Common aggregate functions include:
+
+Sum
+
+Count
+
+Average
+
+14. What are Temporal data types?
+Date Datatype
+
+Timestamp Datatype
+
+Interval Datatype
+
+15. What is a View?
+View is a logical table based on one or more tables or views. A view does not store data physically. Tables upon which views are based are called Base tables. 
+
+16. How are pictures stored onto a database?
+Long Raw Data type can be used to store pictures onto a database. Binary data of length 2GB can be stored using this datatype. 
+
+17. Where do you use DECODE and CASE statements?
+These statements function like the if-then-else statement and are used in Oracle for data value transformation. 
+
+18. What is MERGE in Oracle, and how can you merge two tables?
+Merge statement allows merging data from two tables subsequently. It selects data from the source table and inserts/updates the data in the destination table as per the condition specified in the query. Merge command is useful in Data warehousing applications. 
+
+19. What is NULL value in Oracle?
+NULL value indicates missing or unknown data. 
+
+20. When is a SYSTEM tablespace created?
+A SYSTEM tablespace is automatically generated when any database is created in the Oracle database system. It contains the data dictionary tables for the entire database and always remains online.
+
+21. What does each number represent in the Oracle version 9.3.0.5.0?
+Oracle version number represents the following: 
+
+9 - Major database release number
+3 - Database maintenance release number
+0 - Application server release number
+5 - Component Specific release number
+0 - Platform Specific release number
+
+22. What is a bulk copy in Oracle?
+Bulk copy or BCP is for importing and exporting data from tables and views. 
+--efficient method to load large amounts of data from a data source into an Oracle database table using the ODP.NET library.
+--utilizes a direct path load approach, which is much faster than conventional SQL INSERT statements because it bypasses much of the standard processing overhead.
+--high-performance feature designed to efficiently load large volumes of data from a source (like a DataTable or IDataReader) into an Oracle table
+
+Intermediate Oracle Interview Questions
+23. What is Integrity Constraint?
+Integrity constraint is a declaration to define a business rule for a table column. It ensures data accuracy and consistency. Common types are:
+
+Domain Integrity
+
+Referential Integrity
+
+24. What is SQL?
+SQL or Structured Query Language is used to communicate with the server for accessing, manipulating, and controlling data. 
+
+25. What are the different types of SQL statements?
+The five types of SQL statements are:
+
+Data Definition Language (DDL): CREATE, DROP, RENAME, ALTER, TRUNCATE
+
+Data Manipulation Language (DML): INSERT, DELETE, UPDATE, MERGE
+
+Data Control Language (DCL): GRANT, REVOKE
+
+Data Retrieval: SELECT
+
+Transaction Control Statements: COMMIT, SAVEPOINT, ROLLBACK
+
+26. What is PL/SQL?
+PL/SQL is an extension of SQL, which is used in Oracle. PL/SQL combines SQL’s data manipulation power with the processing power of procedural language and creates extra-powerful SQL queries. It uses SQL to instruct the compiler what to do and a procedural way to instruct how to do it. 
+
+27. What is a Literal?
+A Literal is a string consisting of a character, a number, or a date that is included in the Select list but which is not a column name or alias.  
+
+28. Difference between SQL and iSQL*Plus?
+SQL is a language, but iSQL*Plus is an environment. iSQL*Plus is a command line tool that allows typing SQL commands to be executed directly against the Oracle database. While SQL uses Functions to perform certain formatting, iSQL*Plus uses commands to format data. 
+
+29. What are SQL functions?   
+SQL functions can take arguments but always return a certain value. The 2 types of SQL functions are:
+
+Single-row functions like character, number, date, conversion, and general. 
+
+Multiple-row (aggregate) functions like avg, count, sum, max, min, stddev, variance.
+
+Types of Ssingle row QL General functions are:
+
+NVL
+
+NVL2
+
+NULLIF
+
+COALESCE
+
+Conditional Expressions
+
+30. What is a Sub Query?
+A SELECT statement embedded within a clause of another SELECT statement is called a subquery. It can be placed in WHERE, HAVING, and FROM clause. 
+
+31. What is VArray?
+VArray (variable sized array) is an Oracle datatype used to hold columns containing multi-valued attributes. It can hold a bounded array of values. 
+
+Advanced Oracle Interview Questions
+32. What is the fastest query method to fetch data from a table?
+Using the Row ID is the fastest query method to fetch data from a table. 
+
+33. What is the difference between hot backup and cold backup?
+Hot backup is also called online backup, as it is done when the database is active. 
+
+Cold backup is also called offline backup, as it is done when the database has been shutdown. 
+
+34. What are the uses of a database trigger?
+Triggers are programs that get automatically executed in response to some events. For example, a trigger can be invoked when a row is inserted into a table. It helps maintain data integrity. 
+
+35. What is the difference between TRANSLATE and REPLACE?
+TRANSLATE is used to substitute a character by a character, while REPLACE is used to substitute a character with a word. 
+
+36. What is Cross Join?
+Cross join is the Cartesian product of records from the tables that are there in the join. 
+
+Other Oracle Interview Questions for Experienced
+What are the various modules in Oracle forms?
+What does a snapshot in the Oracle database mean?
+How many memory layers does the Oracle shared pool have?
+What do the terms save point and hash cluster mean in the Oracle database?
+What are the different types of Oracle database objects?
+Enumerate the differences between pre-select and pre-query.
+What is a synonym? Can you create a synonym without a table?
+State the different types of synonyms and their use. 
+What is the significance of the control file in Oracle?
+What does BLOB data type mean in Oracle?
+How is a post-database commit different from a post-form commit?
+What is a logical backup?
+What is redo log file mirroring in Oracle?
+What are recursive hints in Oracle?
+State the limitations of the CHECK constraint.
+How would you convert a date to char in Oracle? Explain with an example.
+What do you understand about formal and actual parameters?
+What extensions do Oracle reports use?
+How would you convert a string to a date in the Oracle database?
+How would you find the current time and date in Oracle?
+What is the use of the following options in the IMP command: 
+ROWS
+GRANT
+INDEXES 
+IGNORE 
+SHOW 
+FILE param 
+
+Q1. How will you differentiate between Varchar & Varchar2?
+
+	--Both Varchar & Varchar2 are the Oracle data types which are used to store character strings of variable length. To point out the major differences between these,
+	--varchar can store characters up to 2000 bytes
+	--varchar2 can store characters up to 4000 bytes.
+	--varchar will hold the space for characters defined during declaration even if all of them are not used
+	--varchar2 will release the unused space
+
+Q2. What are the components of logical database structure in Oracle database?
+	--The components of the logical database structure in Oracle database are:
+		--Tablespaces: A database mainly contains the Logical Storage Unit called tablespaces. This tablespace is a set of related logical structures. To be precise, tablespace groups are related to logical structures together.
+		--Database schema objects: A schema is a collection of database objects owned by a specific user. The objects include tables, indexes, views, stored procedures, etc. And in Oracle, the user is the account and the schema is the object. It is also possible in the database platforms to have a schema without a user specified.
+
+Q3. Describe an Oracle table
+
+A table is a basic unit of data storage in the Oracle database. A table basically contains all the accessible information of a user in rows and columns.
+
+Q4. Explain the relationship among database, tablespace and data file?
+
+An Oracle database possesses one or more logical storage units called tablespaces. Each tablespace in Oracle database consists of one or more files called the datafiles. These tablespaces collectively store the entire data of databases. Talking about the datafiles, these are the physical structure that confirms with the operating system as to which Oracle program is running.
+
+Q5. What are the various Oracle database objects?
+
+These are the Oracle Database Objects:
+
+Tables: This is a set of elements organized in a vertical and horizontal manner.
+Tablespaces: It is a logical storage unit in Oracle.
+Views: Views are a virtual table derived from one or more tables.
+Indexes: This is a performance tuning method to process the records.
+Synonyms: It is a name for tables.
+
+Q6. Explain about the ANALYZE command in Oracle?
+
+This “Analyze” command is used to perform various functions on index, table, or cluster. The following list specifies the usage of ANALYZE command in Oracle:
+
+Analyze command is used to identify migrated and chained rows of the table or a cluster.
+It is used to validate the structure of an object.
+This helps in collecting the statistics about the object used by the user and are then stored on to the data dictionary.
+It also helps in deleting statistics that are used by an object from the data dictionary.
+
+Q7. What types of joins are used in writing subqueries?
+
+A Join is used to compare and combine, this means literally join and return specific rows of data from two or more tables in a database.
+
+There are three types of joins in SQL that are used to write the subqueries.
+
+Self Join: This is a join in which a table is joined with itself, especially when the table has a foreign key which references its own primary key.
+Outer Join: An outer join helps to find and returns matching data and some dissimilar data from tables.
+Equi-join: An equijoin is a join with a join condition containing an equality operator. An equijoin returns only the rows that have equivalent values for the specified columns.
+
+Q8. RAW datatype in Oracle
+
+The RAW datatype in Oracle is used to store variable-length binary data or byte string values. The maximum size for a raw in a given table in 32767 bytes.
+
+You might get confused as to when to use RAW, varchar, and varchar2. Let me point out the major differences between them. 
+PL/SQL does not recognize the data type and hence, it cannot have any conversions when RAW data is transferred to different systems. 
+This data type can only be queried or can be inserted in a table.
+
+Q9. What is the use of Aggregate functions in Oracle?
+
+An aggregate function in Oracle is a function where values of multiple rows or records are joined together to get a single value output. It performs the summary operations on a set of values in order to provide a single value. There are several aggregate functions that you can use in your code to perform calculations.
+Some common Aggregate functions are:
+
+Average
+Count
+Sum
+Q10. Explain Temporal data types in Oracle
+
+Oracle mainly provides these following temporal data types:
+
+Date Data Type: Different formats of Dates.
+TimeStamp Data Type: Has different formats of Time Stamp.
+Interval Data Type: Interval between dates and time.
+
+Q11. What is a View?
+
+A view is a logical table based on one or more tables or views. A View is also referred as a user-defined database object that is used to store the results of a SQL query, that can be referenced later in the course of time. Views do not store the data physically but as a virtual table, hence it can be referred as a logical table. The corresponding tables upon which the views are signified are called Base Tables and this doesn’t contain data.
+
+Q12. How to store pictures on to the database?
+
+It is possible to store pictures on to the database by using Long Raw Data type. This data type is used to store binary data of length 2GB. Although, the table can have only on Long Raw data type.
+
+Q13. Where do you use DECODE and CASE Statements?
+
+Both these statements Decode and Case will work similar to the if-then-else statement and also they are the alternatives for each of them. These functions are used in Oracle for data value transformation.
+
+Example:
+
+Decode function
+
+Select OrderNum,
+DECODE (Status,’O’, ‘Ordered’,’P’, ‘Packed,’ S’,’ Shipped’, ’A’,’Arrived’)
+FROM Orders;
+
+Case function
+
+Select OrderNum
+, Case(When Status=’O’ then ‘Ordered’
+When Status =’P’ then Packed
+When Status=’ S’ then ’Shipped’
+else ’Arrived’) end
+FROM Orders;
+
+Both these commands will display Order Numbers with their respective Statuses like this,
+
+Status O= Ordered
+Status P= Packed
+Status S= Shipped
+Status A= Arrived
+
+Q14. What do you mean by Merge in Oracle and how can you merge two tables?
+
+Merge statement is used to merge the data from two tables subsequently. It selects the data from the source table and then inserts/updates it in the other table based on the condition provided in the query. It is also useful in data warehousing applications. 
+
+Q15. What is the data type of DUAL table?
+
+The Dual table is basically a one-column table that is present in the Oracle database. This table has a single Varchar2(1) column called Dummy which has a value of ‘X’.
+
+SQL Interview Questions
+
+Q16. Explain about integrity constraint?
+
+An integrity constraint is actually a declaration that is defined as a business rule for a table column. They are used to ensure accuracy and consistency of data in the database. It can also be called as a declarative way to define a business rule for a table’s column. There are a few types, namely:
+
+Domain Integrity
+Referential Integrity
+Domain Integrity
+
+Q17. What is SQL and also describe types of SQL statements?
+
+SQL stands for Structured Query Language. SQL is used to communicate with the server in order to access, manipulate and control data. There are 5 different types of SQL statements available. They are:
+
+Select: Data Retrieval
+Insert, Update, Delete, Merge: Data Manipulation Language (DML)
+Create, Alter, Drop, Rename, Truncate: Data Definition Language (DDL)
+Commit, Rollback, Savepoint: Transaction Control Statements
+Grant, Revoke: Data Control Language (DCL)
+
+Q18. Briefly explain what is Literal? Give an example where it can be used?
+
+	--A Literal is a string that contains a character, a number, or a date that is included in the Select list and which is not a column name or a column alias.
+	--Also note that, Date and character literals must be enclosed within single quotes (‘ ‘), whereas you don’t have to do that for the number literals.
+	--For example: Select last_name||’is a’||job_id As “emp details” from employee;
+
+In this case, “is a” is literal.
+
+Q19. How to display row numbers with the records?
+
+Select rownum <fieldnames> from table; This above query will display the row numbers and the field values from the given table.
+
+This query will display row numbers and the field values from the given table.
+
+Q20. What is the difference between SQL and iSQL*Plus?
+
+
+Q21. What are SQL functions? Describe in brief different types of SQL functions?
+
+SQL Functions are a very powerful feature of SQL. These functions can take arguments but always return some value. 
+	--two distinct types of SQL functions available. They are:
+		--Single-Row functions: These functions operate on a single row to give one result per row.
+			--Types of Single-Row functions are:
+				--Character
+				--Number
+				--Date
+				--Conversion
+				--General
+		--Multiple-Row functions: These functions operate on groups of rows to give one result per group of rows.
+			--Types of Multiple-Row functions:
+				--avg
+				--count
+				--max
+				--min
+				--sum
+				--stddev
+				--variance
+
+
+Q22. Describe different types of General Function used in SQL?
+
+General functions are of following types:
+
+NVL: Converts a null value to an actual value. NVL (exp1, exp2) .If exp1 is null then NVL function return value of exp2.
+NVL2: If exp1 is not null, nvl2 returns exp2, if exp1 is null, nvl2 returns exp3. The argument exp1 can have any data type. NVL2 (exp1, exp2, exp3)
+NULLIF: Compares two expressions and returns null if they are equal or the first expression if they are not equal. NULLIF (exp1, exp2)
+COALESCE: Returns the first non-null expression in the expression list. COALESCE (exp1, exp2… expn). The advantage of the COALESCE function over NVL function is that the COALESCE function can take multiple alternative values.
+Conditional Expressions: Provide the use of IF-THEN-ELSE logic within a SQL statement. Example: CASE Expression and DECODE Function.
+
+Q23. What is a Sub Query? Describe its Types?
+
+A subquery is a SELECT statement that is embedded in a clause of another SELECT statement. A subquery can be placed in where having and from clause.
+
+Guidelines for using subqueries:
+
+You should enclose the sub-queries within parenthesis.
+Place these subqueries on the right side of the comparison condition.
+Use Single-row operators with single-row subqueries.
+Use Multiple-row operators with multiple-row subqueries.
+Types of subqueries:
+
+Single-Row Subquery: Queries that return only one row from the inner select statement. Single-row comparison operators are: =, >, >=, <, <=, <>
+Multiple-Row Subquery: These are queries that return more than one row from the inner Select statement. You will also find multiple-column subqueries that return more than one column from the inner select statement. Operators include: IN, ANY, ALL.
+
+Q24. What is the use of Double Ampersand (&&) in SQL Queries? Give an example
+
+You can use && if you want to reuse the variable value without prompting the user each time.
+
+For example: Select empno, ename, &&column_name from employee order by &column_name;
+
+Q25. Describe VArray
+
+VArray is basically an Oracle data type used to have columns containing multivalued attributes and it can hold a bounded array of values. 
+	All Varrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.
+
+Each element in a Varray has an index associated with it. It has a maximum size (max_size) that can be changed dynamically.
+
+Q26. What are the attributes of the Cursor?
+
+Each Cursor in Oracle has a set of attributes that enables an application program to test the state of the Cursor. The attributes can be used to check whether the cursor is opened or closed, found or not found and also find row count.
+	--%ISOPEN %FOUND %NOTFOUND %ROWCOUNT: This numeric attribute returns the number of rows processed by the cursor so far.
+	
+Q27. Name the various constraints used in Oracle
+
+These are the following constraints used:
+
+NULL: It is to indicate that a particular column can contain NULL values.
+NOT NULL: It is to indicate that particular column cannot contain NULL values.
+CHECK: Validate that values in the given column to meet the specific criteria.
+DEFAULT: It is to indicate the value is assigned to a default value.
+
+Q28. What is the fastest query method to fetch data from the table?
+
+The fastest query method to fetch data from the table is by using the Row ID. A row can be fetched from a table by using RowID.
+
+Q29. Difference between Cartesian Join and Cross Join?
+
+There are no such differences between these Joins. Cartesian and Cross join are the same.
+Cross join gives a cartesian product of two tables i.e., the rows from the first table is multiplied with another table that is called cartesian product.
+Cross join without the where clause gives a Cartesian product.
+
+Q30. How does the ON-DELETE-CASCADE statement work?
+
+Using this On Delete Cascade you can automatically delete a record in the child table when the same record is deleted from the parent table. This statement can be used with Foreign Keys as well.
+
+You can add this On Delete Cascade option on an existing table.
+
+Syntax:
+
+Alter Table Child_T1 ADD Constraint Child_Parent_FK References
+Parent_T1(Column1) ON DELETE CASCADE;
+
+Oracle PL/SQL Interview Questions
+Q31. What is PL SQL?
+
+PL/SQL is an extension of Structured Query Language (SQL) that is used in Oracle. It combines the data manipulation power of SQL with the processing power of procedural language in order to create super-powerful SQL queries. 
+PL SQL means instructing the compiler what to do through SQL and how to do it through its procedural way.
+
+Q32. Enlist the characteristics of PL/SQL? - dumb question
+
+There are a lot of characteristics of PL/SQL. Some notable ones among them are:
+
+PL/SQL is a block-structured language.
+It is portable to all environments that support Oracle.
+PL/SQL is integrated with the Oracle data dictionary.
+Stored procedures help better sharing of application.
+
+Q33. What are the data types available in PL/SQL?
+
+There are two data types available in PL/SQL. They are namely:
+
+Scalar data types
+	--numeric =>number, pls_integer, binary_float
+	--character =>varchar2, char, varchar, nvarchar2
+	--datetime/interval =>date, timestamp, interval
+	--boolean
+
+Composite datatypes
+	--records
+	--collections
+
+Q34. What are the uses of a database trigger = need to clarify if table trigger of system trigger
+
+Triggers are the programs which are automatically executed when some events occur:
+
+Implement complex security authorizations.
+Drive column values.
+Maintain duplicate tables.
+Implement complex business rules.
+Bring transparency in log events. 
+
+Q35. Show how functions and procedures are called in a PL SQL block
+
+A Procedure can have a return statement to return the control to the calling block, but, it cannot return any values through the return statement. They cannot be called directly from Select statements but they can be called from another block or through EXEC keyword.
+
+The procedure can be called in the following ways:
+a) CALL <procedure name> direc
+b) EXCECUTE <procedure name> from calling environment
+c) <Procedure name> from other procedures or functions or packages
+
+Functions can be called in the following ways
+a) Execute<Function name> from calling environment. Always use a variable to get the return value.
+b) As part of an SQL/PL SQL Expression
+
+Q36. What are the two virtual tables available at the time of database trigger execution?
+	--in oracle the virtual tables are old and new
+	--INSERT related triggers, new.column_name values are available only.
+	--DELETE related triggers, new.column_name values are available only.
+	--UPDATE related triggers, both Table columns are available.
+
+Q37. What are the differences between Primary Key and Unique Key?
+
+	--unique constraints
+		--A table can have more than one Unique Key
+		--A unique key column can store NULL values
+		--Uniquely identify each value in a column
+	--primary key
+		--A table can have only one Primary Key
+		--A primary key column cannot store NULL values
+		--Uniquely identify each row in a table
+
+Q38. Explain the purpose of %TYPE and %ROWTYPE data types with the example?
+
+--%ROWTYPE and %TYPE are the attributes in PL/SQL which can inherit the datatypes of a table that are defined in a database. 
+--The main purpose of using these attributes in Oracle is to provide data independence and integrity. 
+--if any of the datatypes gets changed in the database, PL/SQL code gets updated automatically including the change in the datatypes.
+
+%TYPE: This is used for declaring a variable that needs to have the same data type as of a table column.
+%ROWTYPE: This is used to define a complete row of record having a structure similar to the structure of a table.
+
+Q39. Explain the difference between Triggers and Constraints?
+
+	--constraints - Affect all rows of the table including that already exist when the constraint is enabled
+	--constrains Constraints maintain the integrity of the database
+	--Triggers are used to implement complex business rules which cannot be implemented using integrity constraints	
+	--triggers only affect those rows added after the trigger is enabled	
+
+Q40. Exception handling in PL/SQL
+
+When an error occurs in PL/SQL, the corresponding exception is raised. 
+This also means, to handle undesired situations where PL/SQL scripts gets terminated unexpectedly, error-handling code is included in the program. 
+In PL/SQL, all exception handling code is placed in the Exception section.
+
+There are 3 types of Exceptions:
+
+Predefined Exceptions: Common errors with predefined names.
+Undefined Exceptions: Less common errors with no predefined names.
+User-defined Exceptions: Do not cause runtime error but violate business rules.
+
+Comparison based Interview Questions 
+
+Q41. What is the difference between COUNT (*), COUNT (expression), COUNT (distinct expression)?
+
+COUNT (*): This returns a number of rows in a table including the duplicates rows and the rows containing null values in the columns.
+COUNT (EXP): This returns the number of non-null values in the column identified by an expression.
+COUNT (DISTINCT EXP): It returns the number of unique, non-null values in the column identified by an expression.
+
+Q42. Difference between the “VERIFY” and “FEEDBACK” command?
+
+The major differences between Verify and Feedback commands are:
+
+Verify Command: You can use this command to confirm the changes in the SQL statement which can have old and new values that are defined with Set Verify On/OFF.
+Feedback Command: It displays the number of records that are returned by a query.
+
+Q43. List out the difference between Commit, Rollback, and Savepoint?
+
+The major differences between these are listed below:
+
+Commit: This ends the current transaction by ensuring that all pending data changes are made permanent.
+Rollback: This ends the current transaction by discarding or deleting all pending data changes.
+Savepoint: It divides a transaction into smaller parts. You can rollback the transaction until you find a particular named savepoint.
+
+Q44. What is the difference between SUBSTR and INSTR?
+
+SUBSTR returns a specific portion of a string whereas INSTR provides the character position in which a pattern is found in a string. SUBSTR returns string whereas INSTR returns numeric values.
+
+Q45. Point out the difference between USER TABLES and DATA DICTIONARY?
+
+User Tables: This is a collection of tables created and maintained by the user. It also contains user information.
+Data dictionary: This is a collection of tables that are created and maintained by the Oracle Server. It contains database information. All data dictionary tables are owned by the SYS user.
+
+Q46. Major difference between Truncate and Delete?
+
+Q47. Point the difference between TRANSLATE and REPLACE?
+
+Translate is used for character by character substitution whereas Replace is used to substitute a single character with a word.
+
+Q48. What is the difference between $ORACLE_BASE and $ORACLE_HOME?
+
+$Oracle_base is the main or root directory of Oracle whereas Oracle_Home is located beneath the base folder in which all Oracle products reside.
+
+Q49. What do you understand by Redo Log file mirroring? =>safety feature that protects your database against data loss by maintaining identical copies of log files on different disks. 
+--Key Concepts
+	--Groups and Members: Redo logs are organized into groups. Mirroring is achieved by having multiple members within each group.
+	--LGWR Writing: When a transaction occurs, the Log Writer (LGWR) process writes the change information to all members of the current redo log group concurrently.
+	--Physical Separation: For effective mirroring, members of the same group should be placed on separate physical disks and controllers to eliminate a single point of failure.
+--Why It Matters
+	--Crash Recovery: Without mirrored logs, losing a single log file during a database failure can lead to catastrophic data loss, as you might only be able to recover up to the last available log entry.
+	--Operational Continuity: If one member of a group becomes unavailable, Oracle continues to run by writing to the remaining healthy members.
+	--Resilience over RAID: While hardware RAID provides protection, Oracle's internal multiplexing is often considered more resilient to software-induced corruptions.
+
+Q50. What is the difference between a hot backup and a cold backup in Oracle? Explain about their benefits as well
+
+Hot backup (Online Backup): A hot backup is also known as an online backup because it is done while the database is active. 
+	--Some sites can’t shut down their database while making a backup copy and they are used 24*7.
+Cold backup (Offline Backup): A cold backup is also known as an offline backup because it is done while the database has been shut down using the SHUTDOWN command. 
+	--If the database is suddenly shutdown with an uncertain condition, it should be restarted with RESTRICT mode and then shutdown with the NORMAL option. 
+	--For a complete cold backup, the corresponding files must be backed up i.e., all datafiles, All control files, All online redo log files and the init.ora file (you can recreate it manually).
+
+
+--there are 85 oracle interview questions at https://www.besanttechnologies.com/oracle-interview-questions-and-answers (it won't let me copy them)
+
+q1 - what are schema objects  
+	--schema objects are tables, views, sequences, synonyms, indexes, database triggers, procedures, functions, packages
+q2 - what is a table
+	--a collection of information stored as rows and columns
+q3 - what is a view
+		
+q4 - what is an index - 
+
+q5 - what is a data file - 
+
+q6 - difference between unique and primary key constraint
+	--unique constraint columns can contain null values while primary key columns cannot
+
+q7 - what is pl/sql
+ 
+q8 - what is the basic structure of pl/sql
+
+q9 - difference between %rowtype and type record	
+	-- %rowtype accepts multiple data types while type record accets single datatype
+
+q10 - what is a cursor? Why is a cursor required?
+	-- a named private sql area from where info can be passed and executed or accessed.  cursors are required to process rows indivudally for queries returning multiple rows
+		
+q11 - explain the two types of cursors
+	--implicit and exlicit cursors
+q12 - what is raise_application_error?
+
+q13 - difference between procedure and function
+
+q14 - what is overloading  of procedures
+	--overloading is an aspect of object oriented programming called polymorphism
+	--ability to define multiple subprograms (procedures or functions) with the same name but different parameter lists within the same scope.
+	--allows you to perform similar logic on different types of data without having to invent unique names for every variation.
+	--to successfully overload a subprogram, the versions must differ in their formal parameters by:
+		--Number: Having a different count of arguments.
+		--Order: Arranging parameters of different types in a different sequence.
+		--Data Type Family: Using parameters from different categories (e.g., NUMBER vs. VARCHAR2)
+			--cannot overload based on subtypes within the same family (e.g., INTEGER vs. REAL are both in the NUMBER family and are often indistinguishable to the compiler).
+q15 - what is a package and what is advantage of using a package
+	--groups logically related PL/SQL types, variables, constants, subprograms (procedures and functions), cursors, and exceptions into a single unit
+	--serves as a container or library that organizes these elements for better modularity and reusability across applications
+	--advantages:
+		--Modularity & Organization: Packages allow developers to encapsulate related logic (e.g., all "Employee Management" functions) in one named module, making code easier to understand and manage.
+		--Better Performance:Memory Efficiency: When any part of a package is first called, the entire package is loaded into memory. Subsequent calls to other subprograms in that package require no further disk I/O, speeding up execution.
+		--Reduced Recompilation: Changes to a package body do not invalidate dependent objects. Only changes to the specification require recompiling everything that calls the package.
+		--Information Hiding (Encapsulation): You can define private subprograms in the body that cannot be accessed by external users. This protects internal logic and ensures users only interact with the intended public interface.
+		--Overloading: Packages allow you to create multiple procedures or functions with the same name but different parameter types or numbers, which is not possible with standalone objects.
+		--Session State Persistence: Public variables and cursors declared in a package remain available for the entire duration of a user's session, allowing data to persist across multiple transactions without being stored in a table.
+		--Simplified Security: Instead of granting permissions on dozens of individual procedures, an administrator can grant a single EXECUTE privilege on the entire package.For more details on implementation, you 	
+		
+q16 - difference between truncate and delete
+
+q17 - what is a join? explain different types of joins
+	--SQL operation used to combine rows from two or more tables, views, or materialized views based on related columns, typically primary and foreign keys
+	--Key Types of Oracle Joins
+		--INNER JOIN]: Returns only rows that have matching values in both tables.
+		--LEFT (OUTER) JOIN]: Returns all rows from the left table, plus matched rows from the right table.
+		--RIGHT (OUTER) JOIN]: Returns all rows from the right table, plus matched rows from the left table.
+		--FULL (OUTER) JOIN]: Returns all rows when there is a match in either the left or right table.
+		-CROSS JOIN]: Returns the Cartesian product of the two tables (e	very row from table A combined with every row from table B).
+		--SELF JOIN]: A join that connects a table to itself to compare rows within the same table.
+
+18 - what is a subquery
+
+q19 - what is a correllated subquery => a correlated subquery is logically evaluated once for every row processed by the parent statement
+	--Because they can run many times, correlated subqueries can be slower than joins or Analytic Functions for large datasets
+	--if you have time, look into correlated subqueries in select, join and where clauses
+		--also, look into advanages/disadvantages (I see a lot of articles in google about this)
+		
+q20 - difference between instr and substr
+
+q21 - explain union, minus, union all, intersect, intersect all
+		--UNION: Merges the results of two queries and eliminates duplicate rows. It also sorts the final result set to perform this deduplication.
+		--UNION ALL: Combines all rows from both queries, including duplicates. It is faster than UNION because it does not perform a sort or distinct check.
+		--MINUS: Returns only the unique rows from the first query that are not present in the second query.
+		--INTERSECT: Returns only the unique rows that are common to both query results.
+		--Operators Introduced in Oracle 21c
+			--INTERSECT ALL: Returns all rows found in both result sets without removing duplicates. If a value appears twice in Query A and three times in Query B, INTERSECT ALL will return it twice (the smaller number of occurrences).
+			--MINUS ALL: Returns rows from the first result set that are not in the second, but keeps duplicates based on occurrence counts. If Query A has three instances of a row and Query B has one, MINUS ALL will return two instances.
+			--EXCEPT / EXCEPT ALL: These are functional synonyms for MINUS and MINUS ALL, respectively, bringing Oracle closer to standard ANSI SQL syntax.Rules and Requirements		
+
+q22 - what are the uses of savepoint
+ 
+	--subdivides a transaction into smaller parts enabling rollback of part of a transaction
+	--a commit removes all savepoints in the transaction
+	--number of active savepoints in a single transaction is unlimited although constrained by memory and undo tablespace
+	
+q23 - what is rowid
+	--pseudocolumn for every row in a tables
+	--block number, rownumber, file number are components of rowid
+	
+q24 - what is a primary key, unique key, foreign key
+
+q25 - what is on delete cascade
+
+q26 - difference between char, varchar, and varchar2?  what is max size for each type
+
+q27 - how to store results of a query into a file
+	--use SPOOL filename.txt
+
+q31 - what returns from sign(abs(nvl(-32,0)))
+
+q32 - which functions could you use to strip leading characters from a character string
+	--ltrim, substr
+	
+q33  operators used with a single row subquery
+		--in, =, <>
+		
+q37 - commands that will save the changes of a transaction => commit, exit from sqlplus, ddl command
+
+q39 - 	pseudocolumn used to know the current value of a sequence => currval
+	
+q40 - 	 query used in top N analysis is
+	--3 options/techniques => can use rownum(with subquery), can use fetch first N rows only(recommended), can use dense_rank
+		
+q41 - an operator used to get and display redundant records => intersect
+	
+q45 - difference between trigger and stored procedure
+
+q46 - difference between date and timestamp =>  primary difference is level of precision: DATE is accurate to the second, while TIMESTAMP can track fractional seconds.
+		--Subtracting two DATE values gives the difference in days as a number (e.g., 1.5 for 36 hours). 
+		--Subtracting two TIMESTAMP values results in an INTERVAL DAY TO SECOND, which explicitly shows days, hours, minutes, and seconds.
+
+q47 - create a copy of emp table without any data
+
+q48 - delete the 10th record of emp table (i think this is a dumb question, who would ever require this)
+	--delete from emp where ename = (select ename from emp where rownum <= 10 MINUS select ename from emp where rownum < 10)
+	
+q49 - find all departments which have more than 3 employees, also display the manager who has the maximum num of employees under him 
+
+q50 - display the name of the employees who joined on the same date
+
+q51 - find the employees who joined the company beyond 10 years ago
+
+q52 - find num of employees who salary is greater than their manager salary
+
+q53 - count the employees in each dept where the count is greater than 3
+
+q54 - what is a transaction	=>	unit of work consisting of one or more SQL statements (DML or DDL) that are treated as a single unit. you want all pieces committed together or none of the pieces to be committed (no partial transactions)
+
+q55 - what is an implicit cursor and how is it used by Oracle
+
+q56 - is a public synonym a schema object - 
+	-- I see 2 conflicting answers to this question (see below)
+		--kind of a trick question as public objects are not part of any real schema named PUBLIC => so the answer is no
+		--public synonym is a schema object, but it is not owned by any individual user schema. Instead, it belongs to a special system-wide group called PUBLIC
+		
+
+q57 - is there a pl/sql engine in sqlplus =>no, pl/sql is sent directly to the database engine for execution
+
+q58 - can you read/write file from pl/sql  =>	yes, package utl_file can read/write files, introduced with oracle 7.3
+	
+q59	- how can you protect your pl/sql source code
+
+	-- oracle 7.2 implemented a binary wrapper for pl/sql programs to protect the source code
+	-- transforms the pl/sql into portable binary object that allows distribuion of software without having to worry about exposing proprietary algorithms and methods
+	--syntax example is =>wrap iname=my_code.sql oname=my_code.plb
+		--.plb is the default extension of the output binary file
+	--you deploy the wrapped binary file by running it within sqlplus (very simple), like SQL>@my_file_name.plb	
+		--ALL_SOURCE and USER_SOURCE views will display 'wrapped' in the text column
+q60 - can you use dynamic sql within pl/sql? also, can you uses ddl in a procedure
+	--answer is yes and yes
+q61 - various types of parameter modes in a procedure - Procedures can use three main parameter modes: IN, OUT, and IN OUT
+q62 - what are the constructs of a procedure, function or package  => i think this question is asking about the various components of procs/functions/pkgs such as header/parameters/declarative/execuabl/exception handling and differences between each type
+q63 - why create or replace and not drop and recreate procedures? so that grants are not dropped and so you don't invalidate dependent objects (good question to know)
+q64 - can you pass parameters in packages? 		=>yes, you can pass parameters to procedure or functions in a package
+	--race note: i am not sure if this asking about passing parameters external to the package into the package OR passing parameters from procedures/functions within the package
+q65 - what are the parts of a database trigger - 
+		--Key Components of a Trigger
+			--Triggering Event (When): This is the DML (Data Manipulation Language) operation that activates the trigger, such as INSERT, UPDATE, or DELETE.
+			--Trigger Timing (Before/After): Specifies when the trigger fires relative to the event:
+				--BEFORE: Fires before the data modification is applied, often used for data validation.
+				--AFTER: Fires after the data modification is completed, often used for logging or updating other tables.T
+			--Trigger Condition (Optional): A WHEN clause that checks a specific condition; the action only runs if this condition is met.
+			--Trigger Action/Body (What): The procedural code (e.g., PL/SQL, T-SQL) that executes when the trigger fires, such as auditing changes or updating a last_updated column.
+			--Trigger Level (Row vs. Statement):
+				--FOR EACH ROW: Runs once for every row modified.
+				--Statement Level: Runs once for the entire SQL statement, regardless of how many rows are affected.
+		
+q66 - what are various types of database triggers
+		--DML Triggers - These fire when data modification language (DML) statements—INSERT, UPDATE, or DELETE—are executed on a table or view.
+			--Row-Level Triggers: Fired once for each row affected by the triggering statement. They use :OLD and :NEW qualifiers to access data before and after changes.
+			--Statement-Level Triggers: Fired once for the entire SQL statement, regardless of how many rows are affected.
+			--Compound Triggers: Introduced to allow developers to combine all four timing points (Before/After Row and Before/After Statement) into a single trigger body, making it easier to share data between them and avoid "mutating table" errors.
+		--INSTEAD OF Triggers - Used exclusively on views, these triggers fire instead of the triggering statement. They allow you to perform custom DML operations on complex views that are not normally updatable (e.g., views joining multiple tables).
+		--DDL TriggersThese fire in response to data definition language (DDL) statements like CREATE, ALTER, DROP, GRANT, or REVOKE. They are typically used for auditing or preventing unauthorized schema changes.
+		--System/Database Event Triggers - These fire based on specific events related to the database instance or user sessions:
+			--Logon/Logoff: Fire when a user connects to or disconnects from the database.
+			--Startup/Shutdown: Fire when the database is opened or just before it shuts down.
+			--Server Error: Fire when a specific error message (or any error) occurs.
+q67 - advantages of a store procedure over a trigger - 
+	--Key Advantages of Stored Procedures
+		--Explicit Control and Flexibility: Stored procedures are called intentionally by a user or application, whereas triggers fire automatically based on database events. This allows you to control exactly when the logic runs and with what specific inputs.
+			--we have control over the calling of a stored procedure but we have no control over the firing of a trigger
+		--Parameter Passing: Procedures can accept IN, OUT, and IN OUT parameters, making them highly reusable for different inputs. Triggers cannot accept direct parameters.
+		--Transaction Management: You can include transaction control statements like COMMIT, ROLLBACK, and SAVEPOINT within a stored procedure. Triggers generally cannot contain these statements because they run within the context of the triggering transaction.
+		--Ease of Debugging and Testing: Because they are called explicitly, procedures are much easier to test and debug independently of table actions. Triggers can be difficult to troubleshoot as they execute "behind the scenes".
+		--Return Values: A procedure (or more specifically, a function) can return values or result sets back to the calling application. Triggers cannot return values to the user or application that initiated the change.
+		--Performance Optimization: Stored procedures are precompiled and cached in an executable form, which can reduce execution overhead compared to triggers, especially when complex logic is involved
+q68 - what are cascading triggers? what is the maximum no of cascating triggers at a time	=> When one trigger causes another trigger to fire, the triggers are cascading.
+	--Oracle allows a maximum of 32 cascading triggers
+	--Important Considerations:
+		--Performance: Overusing triggers can lead to complex dependency chains and decreased performance.
+		--Avoid Infinite Loops: Ensure that a trigger does not update the same table that fired it without a proper stopping condition, as this will lead to a recursive error.
+		--Monitoring: The number of cascading triggers can be constrained by the OPEN_CURSORS parameter, as each fired trigger consumes a cursor
+q69 - what are mutating tables - occurs when a row-level trigger attempts to read or modify the same table that is currently being changed by a DML statement (INSERT, UPDATE, or DELETE).
+	--error code is ORA-04091: table <table_name> is mutating, trigger/function may not see it
+q70 - RAC note: ignore this question for now =>what are constraining triggers?  trigger giving and insert/update on a table having referential integrity constraint on the triggering table
+	--rac note: i am not sure this is a valid question because google search says this is not a feature of oracle, but can be written as such
+q71 - describe the oracle databases physical and logical structure
+	--physical=>data files, redo log files, control files and logical=>tables, views, tablespace, extents, segments, data blocks
+q72	- can you increase the size of a tablespace? how?  	=>yes, add a data file to it
+q73 - what is the use of a control file
+		--indicates the file names and location on disk of various data files, redo log files, etc
+q74 - what is the use of the data dictionary	
+	--Primary Uses of the Data Dictionary:
+		--Metadata Reference (Read-Only): Users can query USER_, ALL_, or DBA_ views to find information about tables, columns, constraints, views, indexes, and privileges.
+		--Database Management (By Oracle): The database automatically reads the dictionary to ensure objects exist and to verify user access rights during SQL execution.
+		--Structure Changes (DDL): When a user issues DDL (Data Definition Language) statements (e.g., CREATE, ALTER, DROP), Oracle automatically updates the dictionary to reflect these changes.
+		--Auditing & Security: It tracks security data, such as users, roles, and privileges, allowing DBAs to audit database access
+	--The data dictionary is owned by the SYS user.	
+q75 - what are the states of a rollback segment? what is the difference between partly available and needs recovery
+	--ONLINE - The segment is available and contains data from active transactions, ready for use by the database instance. 
+	--OFFLINE - The segment is not currently acquired by any instance and can be brought online when needed. 
+	--NEEDS RECOVERY - The segment holds data from an uncommitted transaction that cannot be rolled back because the relevant data files are inaccessible or corrupted. 
+	--PARTLY AVAILABLE - segments involved in an in-doubt distributed transaction that is unresolved due to failures, like network issues, preventing the transaction from completing or rolling back. 
+	--UNDEFINED - rollback segment does not exist or has not been initialized within the database, as per the DBA_ROLLBACK_SEGS view. 
+	--The primary difference is the nature of the issue (distributed vs. local) and the ability to take action
+		--PARTLY AVAILABLE: Refers to an in-doubt distributed transaction that cannot be resolved due to a network failure or a lost connection with the coordinator node.
+		--NEEDS RECOVERY: Refers to an uncommitted transaction that cannot be rolled back due to a local media failure, such as a missing, offline, or corrupted datafile.
+q76 - what is max number of columns a table can have
+	--depends on the version of db you have
+	--since oracle 8, you can have 1000 columns on a table
+	--oracle 23 and 26 allow  4096 columns if you have MAX_COLUMNS parameter set to extended
+	--prior to oracle 8 you had only 254 columns
+q77 - can you pass a parameter to a cursor =>only explicit cursors, not implicit cursors
+q78 - what are the various types of rollback segments
+	--SYSTEM Rollback Segment: Created automatically at database creation. It is exclusively used for special system transactions, such as data dictionary changes, and is always brought online during instance startup.
+	--Public Rollback Segment: These form a pool of segments available to any instance requiring a rollback segment. In an Oracle Parallel Server (RAC) environment, any instance can acquire a public rollback segment.
+	--Private Rollback Segment: These are created explicitly and intended for use by a specific instance, as named in the initialization parameter
+q79 - disadvatages of sql
+q80 - when to create indexes
+	--When to Create an Index
+		--Frequent Queries: Create indexes on columns that are frequently used in WHERE clauses, ORDER BY, and GROUP BY statements.
+		--Highly Selective Columns: Index columns where queries typically return less than 15% of the total rows in a large table.
+		--Join Performance: Create indexes on columns used in join conditions to speed up the retrieval of related rows across multiple tables.
+		--Foreign Keys: Indexing foreign keys can prevent share locks on child tables during updates or deletes on the parent table.
+		--Integrity Constraints: Oracle automatically creates indexes for Primary Key and Unique constraints to ensure data integrity.
+	--When to Avoid or Defer Indexing
+		--Bulk Data Loads: It is more efficient to create an index after inserting or loading large amounts of data. Updating indexes during bulk loads significantly slows down the process.
+		--Small Tables: Small tables generally do not require indexes because a full table scan is often faster than an index lookup.
+		--Heavily Updated Columns: Avoid indexing columns that are modified frequently, as every update to the column will require a corresponding update to the index, increasing overhead.
+		--Low Selectivity Columns: Standard B-tree indexes are ineffective for columns with few distinct values (e.g., "Male/Female"). In such cases, a Bitmap Index may be more appropriate
+q81 - how can you avoid indexes
+	--Invisible Indexes: Introduced in Oracle 11g, making an index INVISIBLE allows you to keep it maintained (updated during DML) while hiding it from the optimizer.
+		--Syntax: ALTER INDEX index_name INVISIBLE;.
+	--Unusable Indexes: Marking an index UNUSABLE stops both the optimizer from using it and the database from maintaining it. This is commonly used for bulk data loads to speed up inserts.
+		--Syntax: ALTER INDEX index_name UNUSABLE;.
+	--Note: You must rebuild the index to make it usable again: ALTER INDEX index_name REBUILD;.
+	--Optimizer Hints: You can force a specific query to ignore an index without altering the database schema using the NO_INDEX or FULL hints.
+		--Example: SELECT /*+ NO_INDEX(table_name index_name) */ ....Full Table Scan: SELECT /*+ FULL(table_name) */ ....
+	--Drop Indexes: For permanent removal of an index that no longer provides performance benefits or is on a very small table.
+		--Syntax: DROP INDEX index_name;.
+q82 - difference between view and synonym
+q83 - difference between foreign key and reference key - reference key is the same as a primary key, not sure why this is a question
+q84 - what is a package cursor - cursor that is declared and defined within a PL/SQL package.
+		--Global Access (Specification): When declared in the package specification, the cursor becomes public and can be referenced by other procedures or packages, serving as a global handle.
+		--State Maintenance: Packaged cursors retain their state (open or closed, and position within the result set) until the session ends or the package state is reset. (look into this, it concerns me)
+q85 - what are materialized view and view differences
+	--Storage and Data: Regular views store only the query definition (virtual), while materialized views cache the query result set as a physical table.
+	--Data Freshness: Standard views always provide real-time data, whereas materialized views show data as of the last refresh time, resulting in potential data staleness.
+	--Performance: Materialized views significantly boost performance for complex, high-latency queries (joins/aggregations) because the calculation is precomputed.
+	--Maintenance: Materialized views require maintenance (refreshes), while regular views do not.
+
+advanced queuing interview questions
+
+https://www.datacamp.com/blog/pl-sql-interview-questions
+q1 - what is pl/sql - oracle's procedure extension to sql 
+	--allows developer to implement procedural logic supporting variables, loops, cconditional logic, exception handling, modular programming
+q2 - what is the basic structure of a pl/sql block => answer is declare, begin, exception, end 
+q3 - what are the essential pl/sql datatypes =>the answer is scalar, composite and reference types, question is very broad to be a beginner pl/sql question
+q4 - what are the basic control structures in pl/sql =>the answer is loops and conditional statements (if then else), again I think this question is way too broad
+q5 - difference between stored procedures and functions
+q6 - what are pl/sql packages
+q7 - what are pl/sql triggers
+q8 - what are methods of exception handling => this question is in regards to predefined exceptions versus user defined exceptions, I think the question is too broad
+q9 - how can you verify whether an update executed or not
+	--check %notfound attribute is true (no rows updated), %found (some rows were updated, or %rowcount (exact number of rows that were updated)
+--advanced pl/sql interview questions
+q10 - what are methods of optimizing performance in pl/sql 
+	--minimizing context switches between sql and pl/sql is crucial for optimizing performance.  each switch incurs overhead which can slow down execution times especially in situations involving frequent transitions between the two
+	--Bulk SQL and Bulk Binding: Use FORALL for DML operations and BULK COLLECT for fetching data to minimize context switching between the SQL and PL/SQL engines.
+	--Cursor Management - Prefer implicit cursors (e.g., FOR loops) for simplicity and automatic resource management.
+		--Open and close explicit cursors efficiently, especially in loops, to avoid resource exhaustion.
+	--Data Type Conversions: Minimize implicit data type conversions by using appropriate data types for variables and literals. Use PLS_INTEGER or BINARY_INTEGER for integer arithmetic.
+	--Variable Declarations - Declare variables with appropriate sizes, using %TYPE and %ROWTYPE where applicable.
+	--Avoid Unnecessary Operations 
+		--Initialize variables outside of loops if their values remain constant within the loop.
+		--Avoid redundant calculations or database calls within loops.
+	--Packages - Group related procedures and functions into packages to leverage package state and reduce parsing overhead.
+	--Profiling Tools - Isolate slow code segments using built-in Oracle APIs:
+		--DBMS_PROFILER: Records execution time for every line of PL/SQL code to pinpoint bottlenecks.
+		--DBMS_TRACE: Traces the order of subprogram executions and exceptions.
+		--Hierarchical Profiler: Specifically designed to account for SQL and PL/SQL times separately
+			--powerful, free tool introduced in Oracle 11g to identify performance bottlenecks by analyzing subprogram calls, SQL statement execution times, and hierarchical relationships.
+			--built into sql developer (take a look at it) => lotta info at https://www.thatjeffsmith.com/archive/2019/02/sql-developer-the-pl-sql-hierarchical-profiler/
+			--Key Aspects of the Oracle Hierarchical Profiler:
+				--Hierarchical Analysis: It breaks down performance by the hierarchy of calls, revealing parent-child relationships in PL/SQL execution, allowing developers to see how many times a subprogram was called and by whom.
+				--Separation of Metrics: It clearly distinguishes between time spent executing SQL statements and time spent on PL/SQL code.
+				--Integration with Oracle SQL Developer: It offers a graphical interface within SQL Developer to view, analyze, and generate HTML reports for profiler runs.
+				--Mechanism (DBMS_HPROF): It captures data via the DBMS_HPROF package, which is installed by default in modern Oracle databases (e.g., 19c) and works well on cloud platforms.
+				--Use Cases: Essential for optimizing complex, nested PL/SQL applications, finding "hot" functions, and reducing overall execution time.
+				--Reporting: It generates raw trace data that can be analyzed using DBMS_HPROF.ANALYZE to produce detailed reports.
+q11 - how do you use bulk operations to minimize context switches
+q12 - what are dynamic sql and ref cursors	
+q13 - how to handle mutating table erros =>using compound triggers would do it, also 4 more techniques (see things to know file)
+q14 - what is overloading in pl/sql
+q15 - what are compiler directives and pragmas in pl/sql
+q16 - different methods to trace and debug PL/SQL code?
+q17 - how do you design triggers in a heavily concurrent environment - use compound triggers writing to a collection and then bulk write the collection to the tables
+q18 - How do you split large transactions into smaller chunks for reliability?
+q19 - how do you organize complex logic into packages for maintability 
+q20 - how do you handle deadlocks in high-transaction systems
+	--Key Strategies for Handling and Preventing Deadlocks
+		--Implement Proper Indexing: The number one cause of deadlocks in Oracle is unindexed foreign keys. Ensure all foreign key columns are indexed to prevent excessive row-level or table-level locking.
+		--Consistent Order of Operations: Ensure that all application modules update or lock tables in the same order (e.g., always lock TABLE_A before TABLE_B) to prevent circular waiting.
+		--Keep Transactions Short: Long-running transactions hold locks longer, increasing the probability of contention. Design application logic to commit as soon as possible.
+		--Use Exception Handling (ORA-00060): Program your application to catch the ORA-00060 error, roll back the transaction fully, and retry the operation after a short delay.
+		--Avoid Intense Locking: Reduce the frequency of manual LOCK TABLE commands. Rely on Oracle's row-level locking mechanism.
+		--Increase INITRANS: If contention is caused by many sessions updating the same block, increase INITRANS for tables and indexes to allow more Transaction List (ITL) slots in the block header.
+			--physical storage parameter that defines the initial number of Interested Transaction List (ITL) slots allocated in the header of every data block for a table, cluster, or index.
+			--controls how many concurrent transactions (INSERT, UPDATE, DELETE) can modify a specific block simultaneously without waiting
+			-- It is useful for high-concurrency environments where many users update rows on the same block. Increasing it avoids contention but reduces the free space available for data in the block.
+			-When to Increase INITRANS
+				--High-concurrency systems (e.g., e-commerce, high-volume batch processing).
+				--Tables or indexes with frequent, heavy concurrent updates.
+				--when AWR reports show high enq: TX - allocate ITL entry waits.
+https://datalemur.com/blog/advanced-sql-interview-questions
+
+q1 - identify duplicate payments (transactins made at a merchant for the same amount with the same cc card within a 10 minute window)
+q2 - describe how recursive queries work in sql
+q4 - What are ACID properties in SQL?
+q6 - Explain the concept of correlated subqueries in SQL. Can you provide an example of how you can use them?
+q8 - how does indexing work in a relation database?  what are benefits and drawbacks?
+q10 - compare/contrast stored procedures and user defined functions - ridiculously simple question
+q12 - explain purpose of merge statement and provide example
+q14 - differences between clustered and non-clustered indexes
+q16 - purpose of lead/lag functions
+q18 - how is truncate different from delete statements
+q20 - difference between a view and a materialized view 
+
+https://www.hipeople.io/interview-questions/tricky-oracle-sql-interview-questions
+
+q1 - what is sql 
+q2 - difference between an inner join and a left join
+q3 - explain normalization
+q4 - how do you retrieve the top n rows from a table
+q5 - difference betweeen where and having clauses 
+q6 - what is a subquery and how does it differ from a join
+q7 - what is a transaction and why is it important
+q8 - explain concept of database transactions and acid properties
+q9 - how do you add a column in sql
+q10 - what is a sql view and why would you use it
+q11 - difference between union and union all
+q12 - what is sql injection and how can it be prevented 
+q13 - what are database indexes and why are they important
+q14 - how can you optimize queries for better performance
+q15 - what is sql tuning
+
+--tricky oracle interview questions found at https://www.testgorilla.com/blog/tricky-oracle-sql-interview-questions/
+q1 - explain the difference between rank and dense rank analytic functions
+q2 - what is the purpose of the union operator in oracle sql (in addition to combining 2 result sets into a single resultset, don't forget that union removes duplicate rows)
+q3 - name one advantage of using indexes in a database
+q4 - differentiat between the where clause and the having clause 
+q5 - how does the oracle optimizer determine an execution plan for a query
+q6 - key difference betweeen row level and statement level triggers
+q7 - what do the commit and rollback statements do
+q8 - advantages of using bind variables
+q9 - differentiate betwen varchar and varchar2
+q10 - explain database roles and privileges in oracle sql security? how do you grant and revoke privileges to users and roles in Oracle
+q11 - write a sql query to find the average salary of employees within each department (waste of time)
+q12 -write sql query to find employees who earn more than their managers
+q13 - update the status column of orders table to set all orderw with total amount greater than 1000 to High Value (waste of time)
+q14 - write a query to get the date/time of the last 10 logins for a specific user =>this is a fetch first 10 rows only question (waste of time)
+q15 - retrieve the top five highest-rated products base on customer reviews from the product_reviews table
+q16 - calculate the total revenue generated by each customer in the last 3 months
+--there are a lot more questions but I don't have these tables so it is hard to write a proper query when you don't have the tables
+
+--https://myinterviewpractice.com/industries-details/information-technology/oracle-developer-interview-preparation/
+q1 - can you provide an overview of oracle (stupid question)
+q2 - what nomenclature is used to identify oracle db software releases 
+	--know at least the first 2 which is the major db release and then the db maintenance release
+	--the next 3 numbers represent application server relase, component specific relase and platform specific release
+q3 - what process is used to create priviliges in oracle
+q4 - define the term varray as used within oracle and discuss how it is used
+q5 - how to view fields in a table => describe (desc)
+q6 - differences between the rename and alias commands in oracle 	(good question)
+q7 - differentiate betwen varchar and varchar2
+q8 - differences between Oracle's TRUNCATE and DELETE commands?
+q9 - describe what a RAW datatype is and how it is used?    => use raw when you don't want the contents changed in any way (when changing character sets for example)
+q10 - define the term joins as it is used in Oracle and list some of the types of joins?
+	--don't forget about cross join (cartesian product), natural join and self joins
+q11 - What is PCT free and PCT used?
+	--PCT free represents the amount of space within a data block that Oracle reserves for future updates to prevent row chaining
+	--PCT Used represents the data threshhold where Oracle will begin to reinsert rows after a data block has been marked as full (so rows will have to have been deleted for this to occur)
+q12 - how to find the max high value using varray  => don't understant the question
+q13  how reverse string without using string function?
+	--this really seems like a worthless question => would this ever be asked in an interview-preparation/
+	--answer => SELECT LISTAGG(VAL) WITHIN GROUP(ORDER BY LE) FROM (select LEVEL LE , substr(SHIVAM,-LEVEL,1) VAL FROM DUAL CONNECT BY LEVEL
+q14 - advantages of Gathering Statistics?
+
+q16 - order of execution for statement level and row level triggers 	
+q17 - how to set a table for read only access	=>sql syntax: ALTER TABLE table_name READ ONLY;
+		--to revert to read/write access  =>  ALTER TABLE table_name READ WRITE;
+
+		
+BASIC
+q22 - components of a pl/sql block	
+
+INTERMEDIATE
+q19 - how to check for dependent objects		==> there are views that will tell you dependencies - dba_dependencies, all_dependencies, user_dependencies
+	--column NAME is dependent on column REFERENCED_NAME (i.e., name references object referenced_name)
+	--column REFERENCED_NAME has a dependency with object in column NAME (i.e. referenced_name is referenced by name)
+	--RAC NOTE: procedure ADD_JOB_HISTORY is dependent on table JOB_HISTORY
+q18 - what is bulk binding
+	--performance-tuning feature that minimizes context switches between the PL/SQL engine and the SQL engine by processing large batches of data at once rather than row-by-row. 
+	--rac note: this is reference to bulk collect and forall (know how to do this)
+q20 - what is pipeline function
+q21 - what is instead of trigger
+What is AWR report in oracle?	
+--olap vs oltp
+how to pull top 2 salaries =>can it be done using dense rank, rank
+
+--yes, by using either function within a subquery and then choosing the top two
+--how have you used normalization and how does it benefit you
+--how do you handle performance issues
+
+ADVANCED
+--is a merge appropriate for an olap or oltp table
+	--OLAP is primarily used for data warehouses because it is multidimensional and aggregated
+	--OLAP tables are denormalized and consolidated for read performance
+	--from google ai, MERGE operation is primarily appropriate for OLAP (Analytical) tables, where denormalizing data and combining multiple tables into wider, consolidated structures boosts read performance 
+		--avoid for OLTP tables
+		--While technically possible in OLTP, it is often avoided as it creates complex transaction locks and hurts high-concurrency performance		
+q15 - Difference between RANK TRANSFORMATION TYPE and RANGE by PARTITION.
+	--not sure i understand the question, google can't make sense of it		

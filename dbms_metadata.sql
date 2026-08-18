@@ -1,0 +1,25 @@
+
+select *
+from user_types
+
+--below is actual output
+--"
+  CREATE OR REPLACE EDITIONABLE TYPE "HR"."ADDRESS_T" AS OBJECT (
+   street  VARCHAR2(30),
+   city    VARCHAR2(20),
+   state   CHAR(2),
+   zip     CHAR(5) );
+
+"
+ SELECT DBMS_METADATA.GET_DDL('TYPE', 'ADDRESS_T') FROM DUAL;
+ 
+ SELECT DBMS_METADATA.GET_DDL('TYPE', 'MY_TAB_T') FROM DUAL;
+ 
+ SELECT *
+ FROM USER_TAB_COLS --ORDER BY COLUMN_NAME DESC
+ WHERE UPPER(COLUMN_NAME) = 'CITY'
+ /
+
+
+SELECT *
+FROM USER_TYPES

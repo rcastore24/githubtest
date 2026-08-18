@@ -1,0 +1,66 @@
+SCRATCHPAD
+
+select category, value
+--select *
+from (
+select round( 0.4) "round( 0.4)" ,
+       round(.5) "round(.5)",
+       round(0.44, 1) "round(0.44, 1)",
+       round(0.45, 1) "round(0.45, 1)",
+       round(45.45,-1) "round(45.45,-1)",
+       round(44.44, -1) "round(44.44, -1)"
+from dual)
+unpivot 
+(value for category in(
+ "round( 0.4)",
+"round(.5)",
+"round(0.44, 1)",
+"round(0.45, 1)",
+"round(45.45,-1)",
+"round(44.44, -1)"
+));
+/
+
+select cato, value
+--select *
+from (
+select round( 0.4) "round( 0.4)" ,
+       round(.5) "round(.5)",
+       round(0.44, 1) "round(0.44, 1)",
+       round(0.45, 1) "round(0.45, 1)",
+       round(45.45,-1) "round(45.45,-1)",
+       round(44.44, -1) "round(44.44, -1)"
+from dual)
+unpivot 
+(value for cato in(
+ "round( 0.4)",
+"round(.5)",
+"round(0.44, 1)",
+"round(0.45, 1)",
+"round(45.45,-1)",
+"round(44.44, -1)"
+));
+/
+
+docker run --hostname=bb5e3a21b8b3 --user=oracle --mac-address=02:42:ac:11:00:02 --env=DB_SID=OraDoc --env=DB_PASSWD=MyPass123 --env=DB_DOMAIN=my.domain.com --env=DB_BUNDLE=basic --env=ORACLE_PWD=passwd --env=ORACLE_BASE=/opt/oracle --env=ORACLE_HOME=/opt/oracle/product/21c/dbhome_1 --env=ORACLE_BASE_HOME=/opt/oracle/homes/OraDB21Home1 --env=INSTALL_DIR=/opt/install --env=INSTALL_FILE_1=LINUX.X64_213000_db_home.zip --env=INSTALL_RSP=db_inst.rsp --env=CONFIG_RSP=dbca.rsp.tmpl --env=PWD_FILE=setPassword.sh --env=START_FILE=startDB.sh --env=CREATE_DB_FILE=createDB.sh --env=CREATE_OBSERVER_FILE=createObserver.sh --env=SETUP_LINUX_FILE=setupLinuxEnv.sh --env=CHECK_SPACE_FILE=checkSpace.sh --env=CHECK_DB_FILE=checkDBStatus.sh --env=USER_SCRIPTS_FILE=runUserScripts.sh --env=INSTALL_DB_BINARIES_FILE=installDBBinaries.sh --env=RELINK_BINARY_FILE=relinkOracleBinary.sh --env=CONFIG_TCPS_FILE=configTcps.sh --env=SLIMMING=false --env=ENABLE_ARCHIVELOG=false --env=ARCHIVELOG_DIR_NAME=archive_logs --env=CLONE_DB=false --env=STANDBY_DB=false --env=PRIMARY_DB_CONN_STR= --env=DG_OBSERVER_ONLY=false --env=DG_OBSERVER_NAME= --env=CHECKPOINT_FILE_EXTN=.created --env=WALLET_DIR= --env=PATH=/opt/oracle/product/21c/dbhome_1/bin:/opt/oracle/product/21c/dbhome_1/OPatch/:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin --env=LD_LIBRARY_PATH=/opt/oracle/product/21c/dbhome_1/lib:/usr/lib --env=CLASSPATH=/opt/oracle/product/21c/dbhome_1/jlib:/opt/oracle/product/21c/dbhome_1/rdbms/jlib --env=STARTUP_FILE=startUp.sh --env=SHUT_DB_FILE=shutDown.sh --env=LOCKING_SCRIPT=lock.py --env=SWAP_LOCK_FILE=swapLocks.sh --env=CHECK_DB_LOCK_FILE=checkDBLockStatus.sh --env=PYTHONUNBUFFERED=1 --env=CMD_EXEC=cmdExec --env=DEMO_APP=demoapp.sql --env=MAIN_PY=main.py --env=COMMON_PY=oracommon.py --env=ENV_PY=oraenv.py --env=FACTORY_PY=orafactory.py --env=GSM_PY=oragsm.py --env=LOGGER_PY=oralogger.py --env=MACHINE_PY=oramachine.py --env=PCATALOG_PY=orapcatalog.py --env=SHARD_PY=orapshard.py --env=SCATALOG_PY=orascatalog.py --env=SSHARD_PY=orasshard.py --env=RUN_SHARD_FILE=runOraShardSetup.sh --env=RUN_FILE=runOracle.sh --env=PYTHON_FILE=/usr/bin/python --env=PYTHON3_FILE=/usr/libexec/platform-python3.6 --env=SHARD_SETUP=false --network=bridge --workdir=/home/oracle -p 1521:1521 --restart=no --label='io.buildah.version=1.29.0' --label='issues=https://github.com/oracle/docker-images/issues' --label='port.listener=1521' --label='port.oemexpress=5500' --label='provider=Oracle' --label='volume.data=/opt/oracle/oradata' --label='volume.setup.location1=/opt/oracle/scripts/setup' --label='volume.setup.location2=/docker-entrypoint-initdb.d/setup' --label='volume.startup.location1=/opt/oracle/scripts/startup' --label='volume.startup.location2=/docker-entrypoint-initdb.d/startup' --runtime=runc -d container-registry.oracle.com/database/enterprise
+
+kemper insurance requirements
+Yes 8 years of application developer experience
+Somewhat Experience in technical disciplines such as .NET Core 6.0 and C# programming
+Yes Strong knowledge and experience with Oracle PLSQL.
+No Experience with monitoring tools such as Splunk, AppDynamics, and Grafana
+No Experience with Code Analyzer and scanning tools (SonarQube / Veracode)
+Yes Bachelor's degree, equivalent work experience or appropriate technical certification.
+No Life Insurance experience preferred.
+Yes The ability to provide technical leadership on large/complex application installation, development, and support projects
+Yes Advanced knowledge of program design methods and techniques and standard development tools.
+Yes Use knowledge of new frameworks, tools and languages and make recommendations in applications as appropriate.
+Yes Ability to teach and provide instruction to co-workers and provide feedback on progress toward goals.
+No Experience with cloud development practices.
+Yes Worked with various project methodologies (agile and waterfall).
+IThinkSo-NeedMoreInfo Understands technical controls, security concepts and SOX requirements.
+ 
+splunk appears to be able to take large amounts of data (such as activity logs) and search it for issues (such as errors, security breaches,etc)
+grafana appears to be able to take a large data source and visualize it in charts, dashboards, etc	
+	--has an alerts feature =>like if cpu usage is above a certain threshhold or error rates spike
+	

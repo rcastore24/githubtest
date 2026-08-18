@@ -1,0 +1,105 @@
+About the job
+About This Role
+
+Wells Fargo is seeking a Lead Oracle Database Engineer to join Oracle Database Engineering team.
+
+In This Role, You Will
+
+Lead complex or critical database management initiatives that typically involve multiple disciplines and business groups, including database architecture, design, integration and data modeling
+Provide the highest technical expertise for the planning, research, design implementation, maintenance, and control of server class databases
+Review and analyze complex database technologies that require in depth evaluation of multiple factors including intangibles or unprecedented factors
+Design and certify next generation database technologies
+Assist in database installations, including troubleshooting and problem resolution
+Recommend improvements to web application processing issues and design
+with multiple client groups to provide strategic solutions, influencing long range internal and enterprise level database architecture and management strategies
+Provide technical leadership and recommendation into the future direction of database technology
+Collaborate and consult with peers, colleagues and managers to resolve issues and achieve goals
+
+Required Qualifications:
+
+5+ years of Database Engineering experience, or equivalent demonstrated through one or a combination of the following: work experience, training, military experience, education
+5+ years of experience in supporting software development life cycle for large-scale distributed technology projects and migrations
+5+ years of experience leading Database Engineering projects within large organizations
+3+ years of expertise and experience with Oracle Exadata and Zero Data Loss Recovery Appliance (ZDLRA).
+Strong Background in Exadata machine administration or other UNIX System Administration experience.
+Experience with Oracle Maximum Availability Architecture including Oracle Real Application Clustering (RAC), Data Guard and Golden Gate.
+Experience in leading complex or critical data/ database management initiatives and projects.
+
+Desired Qualifications:
+
+Experience with Oracle Database backup and restore
+Working knowledge of Agile methodologies and tools
+Strong technical and task/timeline-oriented skills necessary to ensure projects are completed in a timely and accurate manner.
+Knowledgeable in programming or scripting language
+Experience with large data sets, transactional platforms, or a combination of both
+Experience managing one or more industry-standard development tools or scripting languages
+Good analytical skills with high attention to detail and accuracy
+Excellent verbal, written, and interpersonal communication skills
+Experience with automation a plus.
+
+Job Expectations:
+
+Work collaboratively with Architect, Engineers and Operations team to deliver best in class Oracle Database solutions and services.
+This position offers a hybrid work schedule
+This position is not eligible for visa sponsorship
+Relocation assistance is not available for this position
+
+Posting End Date:
+
+23 Sep 2025
+
+Job posting may come down early due to volume of applicants.
+
+
+lead oracle database engineer
+oracle database engineering team
+
+i have:
+--(Required Qualification) - 5+ years of Database Engineering experience, or equivalent demonstrated through one or a combination of the following: work experience, training, military experience, education
+	--i would like to define database engineering
+--(Required Qualification) - 5+ years of experience in supporting software development life cycle for large-scale distributed technology projects and migrations
+--(Desired Qualification) - Working knowledge of Agile methodologies and tools
+	--flesh out your knowledge including scrum and kanban/jira
+--(Desired Qualification) - Strong technical and task/timeline-oriented skills necessary to ensure projects are completed in a timely and accurate manner.
+--(Desired Qualification) - Knowledgeable in programming or scripting language
+--(Desired Qualification) - Experience with large data sets, transactional platforms, or a combination of both
+--(Desired Qualification) - Experience managing one or more industry-standard development tools or scripting languages
+--(Desired Qualification) - Good analytical skills with high attention to detail and accuracy
+--(Desired Qualification) - Excellent verbal, written, and interpersonal communication skills	
+--(Required Qualification) - 3+ years of expertise and experience with Oracle Exadata and Zero Data Loss Recovery Appliance (ZDLRA).
+		--exadata - computing system optimized for running Oracle Databases.  it combines both hardware and software 
+			--(NTTA purchased this in 2018)
+--(Desired Qualification) - experience with automation a plus
+	--automation - using tools and processes to perform db management task with minimal human interaction to increase efficiency, reduce errors, ensuring consistency, enhancin productivity
+		--involves automating repetitive tasks like backups and updates freein up people to focus on mor strategic work	
+
+	
+i do not have:	
+	--(Required Qualification) - Strong Background in Exadata machine administration or other UNIX System Administration experience.			
+		--i have exposure to exadata usage, not administration
+	--(Required Qualification) - 5+ years of experience leading Database Engineering projects within large organization
+		--i never have lead any projects
+	--(Required Qualification) - Experience with Oracle Maximum Availability Architecture including Oracle Real Application Clustering (RAC), Data Guard and Golden Gate.
+		--Oracle Maximum Availability Architecture - 
+			--Assessment: Oracle MAA assesses customer needs for Recovery Time Objective (RTO) (how quickly the system can be restored) and Recovery Point Objective (RPO) (how much data loss is acceptable). 
+			--Technology Integration: Based on these needs, MAA integrates various Oracle HA (hiigh availability) and DR (disaster recovery) technologies, such as RAC for clustering, Data Guard for replication, and Application Continuity for failover. 
+				--Oracle RAC (Real Application Clusters) -a database architecture that allows multiple instances of a database to run on different servers, while still appearing as a single database to the application	
+				--Oracle Data Guard - maintaining one or more synchronized copies of a production database, known as standby databases.
+					--enables rapid recovery by allowing a standby database at a remote location to be quickly activated as the new primary.
+				--Oracle Golden Gate - captures and delivers data changes as they happen, keeping data synchronized across different databases including 3rd party such as sql server, mysql, postgressql	
+			--Validation: Oracle engineers use customer insights and chaos engineering to validate these integrated architectures, proactively testing their resilience to various failures (e.g., server, network, storage, human error). 
+			--Deployment: MAA guidance applies to various deployment options, including on-premises systems, Oracle engineered systems (like Exadata), and Oracle Cloud Infrastructure (OCI) services. 
+	--(Required Qualification) - Experience in leading complex or critical data/ database management initiatives and projects.
+		--i have team lead experience with GECRG and Dominion
+	--(required qualitification) - Zero Data Loss Recovery Appliance (ZDLRA)		
+		--RMAN (Recovery Manager) - Oracle tool for automating backups, restores and recoveries
+questions
+--dba role?
+	--assist in database installations including troubleshooting and problem resolution
+	--Experience with Oracle Database backup and restore
+--sys admin role?
+--salary?
+--job location?
+
+	
+	

@@ -1,0 +1,23 @@
+tuning
+	--hints
+pl/sql writing 
+	--cursors
+	--loops
+	--exception handling
+		--user defined exceptions
+	--transaction processing
+		--rollback/commit/savepoints
+	--passing parameters
+	--case logic
+	
+sql	
+	--joins (new syntax)
+	--functions
+			--analytic functions
+	--subqueries
+	--set operators (union, intersect,minus, etal)
+	--limit logic
+	--hints
+	--dml (dml, ddl, tcl, dcl)
+	--sql plus
+	
